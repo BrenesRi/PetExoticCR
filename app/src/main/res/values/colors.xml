@@ -2,11 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dark_green">#132A13</color>
-    <color name="green">#609360</color>
-    <color name="light_green">#90A955</color>
-    <color name="GreenButton">#2BBD5D</color>
-    <color name="BackGroudGreen">#77BB77</color>
+    <color name="dark_green">#D93D0C</color>
+    <color name="green">#F07516</color>
+    <color name="light_green">#EBA755</color>
+    <color name="GreenButton">#B83907</color>
+    <color name="BackGroudGreen">#E0893C</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>
