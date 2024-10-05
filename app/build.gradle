@@ -1,0 +1,100 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
+    id "androidx.navigation.safeargs.kotlin"
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.petfinder'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.petfinder"
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        android.buildFeatures.buildConfig true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Custom properties
+        buildConfigField "String", "API_KEY", "\"my_api_key\""
+        buildConfigField "String", "BASE_URL", "\"https://petfinder-app-v01-7a372f1ee223.herokuapp.com/\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    // Activate View Binding
+    buildFeatures {
+        viewBinding = true
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    def nav_version = "2.4.2"
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    // Fragment and Navigation
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    //Google design
+    implementation "com.google.android.material:material:1.11.0"
+    // Date Picker
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    //activityktx
+    implementation "androidx.activity:activity-ktx:1.8.2"
+    //imagesGlide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    // Dependencies for MVVM
+    // Activity
+    implementation "androidx.activity:activity-ktx:1.4.0"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$nav_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$nav_version"
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.7.2"
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // Import the Firebase BoM
+
+    implementation platform('com.google.firebase:firebase-bom:33.1.0')
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    // https://firebase.google.com/docs/android/setup#available-libraries
+}

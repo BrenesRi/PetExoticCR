@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.petfinder.app.view.home.Home"
+        tools:layout="@layout/fragment_pet_list">
+        <action
+            android:id="@+id/action_petList_to_petDetail"
+            app:destination="@id/petDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/petDetailFragment"
+        android:name="com.example.petfinder.app.view.detail.DetailsFragment"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsScreen_to_adoptionRequestDialogFragment"
+            app:destination="@id/adoptionRequestDialogFragment" />
+        <argument
+            android:name="petId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myPetsScreen"
+        android:name="com.example.petfinder.app.view.mypets.MyPets"
+        android:label="MyPets" >
+        <action
+            android:id="@+id/action_myPetsScreen_to_editPet"
+            app:destination="@id/editPet" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPet"
+        android:name="com.example.petfinder.editPet"
+        android:label="fragment_edit_pet"
+        tools:layout="@layout/fragment_edit_pet" >
+        <action
+            android:id="@+id/action_editPet_to_myPetsScreen"
+            app:destination="@id/homeScreen" />
+        <argument
+            android:name="petId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedScreen"
+        android:name="com.example.petfinder.app.view.Saved.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_savedScreen_to_savedDetails"
+            app:destination="@id/savedDetails">
+            <argument
+                android:name="petId"
+                app:argType="long" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/savedDetails"
+        android:name="com.example.petfinder.app.view.Saved.savedDetails"
+        android:label="fragment_saved_details"
+        tools:layout="@layout/fragment_saved_details" >
+        <action
+            android:id="@+id/action_savedDetails_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_savedDetails_to_savedScreen2"
+            app:destination="@id/savedScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="com.example.petfinder.app.view.profile.ProfileWelcome"
+        android:label="ProfileWelcome" >
+    <action
+        android:id="@+id/action_profileScreen_to_sign_up_screen"
+        app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addScreen"
+        android:name="com.example.petfinder.app.view.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/addScreen_to_myPetsScreen"
+            app:destination="@id/myPetsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/iaScreen"
+        android:name="com.example.petfinder.app.view.aipets.ListAI"
+        android:label="ListAI" />
+    <fragment
+        android:id="@+id/detailsScreen"
+        android:name="com.example.petfinder.app.view.detail.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPetsDetails"
+        android:name="com.example.petfinder.myPetsDetails"
+        android:label="fragment_details_mypet"
+        tools:layout="@layout/fragment_details_mypet" >
+        <argument
+            android:name="petId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_myPetsDetails_to_homeScreen2"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_myPetsDetails_to_myPetsScreen2"
+            app:destination="@id/myPetsScreen" />
+        <action
+            android:id="@+id/action_myPetsDetails_to_adoptionsReq"
+            app:destination="@id/adoptionsReq" />
+    </fragment>
+    <fragment
+        android:id="@+id/adoptionsReq"
+        android:name="com.example.petfinder.app.view.adoptions.AdoptionsReq"
+        android:label="fragment_my_adoption_request"
+        tools:layout="@layout/fragment_my_adoption_request" >
+        <action
+            android:id="@+id/action_adoptionsReq_to_myPetsDetails"
+            app:destination="@id/myPetsDetails">
+            <argument
+                android:name="petId"
+                app:argType="long" />
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/adoptionRequestDialogFragment"
+        android:name="com.example.petfinder.AdoptionRequestDialogFragment"
+        android:label="fragment_adoption_request_dialog"
+        tools:layout="@layout/fragment_adoption_request_dialog" >
+        <action
+            android:id="@+id/action_adoptionRequestDialogFragment_to_detailsScreen"
+            app:destination="@id/homeScreen" />
+    </dialog>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.petfinder.app.view.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+</navigation>

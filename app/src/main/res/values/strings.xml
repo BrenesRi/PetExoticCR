@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">PetFinder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="location">Location</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_name">PetFinder</string>
+    <string name="do_you_already_have_an_account_log_in">Do you already have an account? Log in</string>
+    <string name="search">Search</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="edit_pet_title">EDIT PET IMAGE</string>
+    <string name="add_pet_title">ADD PET IMAGE</string>
+    <string name="interest_button">Interest</string>
+    <string name="save_button">Save</string>
+    <string name="delete_button">Delete</string>
+
+    <string name="luna">Luna</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="breed">Breed</string>
+    <string name="color">Color</string>
+    <string name="special_cares">Special Cares</string>
+    <string name="size">Size</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="type">Type</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="descriptionDetailText">Luna is a loving dog who likes to play with other dogs and humans. specially kids! She has all the vaccines up to date</string>
+    <string name="SpecialCaresDetailText">She needs special food, You have to vaccinate her at 15 years old</string>
+    <string name="title_home">Home</string>
+    <string name="cd_home">Home</string>
+    <string name="title_add">Add</string>
+    <string name="cd_add">Add</string>
+    <string name="title_myPets">My Pets</string>
+    <string name="cd_myPets">My Pets</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome_username">Welcome, Username!</string>
+    <string name="username_message">We hope you are enjoying the application, if so, rate us positively! Thank you</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="gender">Gender</string>
+    <string name="my_pets">My Pets</string>
+    <string name="finish">Finish</string>
+    <string name="ia">IA</string>
+    <string name="saved_pets">Saved</string>
+    <string name="detail">Detail</string>
+    <string name="saved_pets_title">Saved Pets</string>
+    <string name="powered_by_a_i">Powered by A.I</string>
+    <string name="these_are_the_pets_for_which_you_started_an_adoption_request">These are the pets for which you started an Adoption Request</string>
+    <string name="these_are_the_pets_you_have_put_up_for_adoption">These are the pets you have put up for Adoption</string>
+    <string name="like">Adopt Request</string>
+    <string name="accept_request">Accept Request</string>
+    <string name="accepted_request">Accepted</string>
+
+    <string name="cancel_request">Cancel Request</string>
+    <string name="waiting_request">waiting</string>
+    <string name="pets_button">Pets</string>
+    <string name="adoptions_button">Adoptions</string>
+    <string name="adoptions">Adoptions</string>
+    <string name="your_pets_adoption_requests">These are your pets adoption requests</string>
+    <string name="edit_pet_image">Edit Pet Image</string>
+
+    <string name="decline_request">Decline Request</string>
+    <string name="personRequest">We are excited to welcome Luna into our home! She is captured our hearts with her charm, and we can not wait to make her a part of our family.</string>
+    <string name="extra">Extra</string>
+    <string name="my_adoptions_requests">My Adoptions Requests</string>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >=5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="welcome">"Welcome to the PetFinder App"</string>
+    <string name="request_ia">Request IA</string>
+    <string name="these_are_the_adoption_requests_you_have_received_for_your_pets">These are the Adoption Requests you have received for your pets</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="welcome_user">Welcome, User!</string>
+    <string name="user_details">User Details</string>
+    <string name="id">ID</string>
+</resources>
+

@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="Widget.Theme.Petfinder.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+    <style name="radius">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Otros atributos de estilo -->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:background">@color/BackGroudGreen</item>
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/BackGroudGreen</item> <!-- Cambia el color de fondo del menú aquí -->
+    </style>
+
+</resources>

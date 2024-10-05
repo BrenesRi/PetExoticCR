@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547049526198",
+    "project_id": "petfinder-9a2e2",
+    "storage_bucket": "petfinder-9a2e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547049526198:android:21439d24a41a0723dae717",
+        "android_client_info": {
+          "package_name": "com.example.petfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABn92GhV08Lq4m_PYO-BVp1RNMm2a3zj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
